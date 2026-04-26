@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On Automation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-logo">On Automation</h1>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link" data-page="about">About</a></li>
+                <li><a href="#blogs" class="nav-link" data-page="blogs">Blogs</a></li>
+                <li><a href="#quickies" class="nav-link" data-page="quickies">Quickies</a></li>
+            </ul>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <span class="theme-icon">🌙</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- About Section -->
+        <section id="about" class="page-section active">
+            <div class="content-wrapper">
+                <h2>About</h2>
+                <p>Welcome to <strong>On Automation</strong>. This is a space dedicated to exploring automation, tools, workflows, and the art of building systems that work for you.</p>
+                <p>Here, I share insights, tutorials, and quick tips on automation practices, from simple scripts to complex workflows. Whether you're looking to streamline your development process, automate repetitive tasks, or learn new tools, you'll find valuable content here.</p>
+                <p><strong>What to expect:</strong></p>
+                <ul>
+                    <li><strong>Blogs:</strong> In-depth articles and tutorials on automation topics</li>
+                    <li><strong>Quickies:</strong> Short, actionable tips and snippets</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Blogs Section -->
+        <section id="blogs" class="page-section">
+            <div class="content-wrapper">
+                <h2>Blogs</h2>
+                
+                <!-- Search Bar -->
+                <div class="search-container">
+                    <input 
+                        type="text" 
+                        id="search-input" 
+                        class="search-bar" 
+                        placeholder="Search posts..."
+                        aria-label="Search blog posts"
+                    >
+                    <span class="search-icon">🔍</span>
+                </div>
+
+                <!-- Blog List -->
+                <div id="blog-list" class="blog-list">
+                    <!-- Posts will be rendered here by JavaScript -->
+                    <p class="loading">Loading posts...</p>
+                </div>
+
+                <!-- Individual Post View -->
+                <div id="post-detail" class="post-detail" style="display: none;">
+                    <button id="back-btn" class="back-btn">← Back to Posts</button>
+                    <article id="post-content"></article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quickies Section -->
+        <section id="quickies" class="page-section">
+            <div class="content-wrapper">
+                <h2>Quickies</h2>
+                <p class="section-subtitle">Quick tips, snippets, and short automation insights</p>
+                
+                <!-- Quickies List -->
+                <div id="quickies-list" class="quickies-list">
+                    <!-- Quickies will be rendered here by JavaScript -->
+                    <p class="loading">Loading quickies...</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 On Automation. Built with minimalism in mind.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/lib/marked.umd.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

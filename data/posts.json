@@ -1,0 +1,52 @@
+{
+  "posts": [
+    {
+      "slug": "getting-started-automation",
+      "title": "Getting Started with Automation",
+      "date": "2026-04-26",
+      "author": "Your Name",
+      "excerpt": "Getting Started with Automation\r \r Welcome to your first automation journey In this post, we'll explore the fundamentals of automation and why it matt...",
+      "content": "<h1>Getting Started with Automation</h1>\n<p>Welcome to your first automation journey! In this post, we'll explore the fundamentals of automation and why it matters in today's world.</p>\n<h2>What is Automation?</h2>\n<p>Automation is the process of using technology to perform tasks with minimal human intervention. Whether it's automating repetitive workflows, managing infrastructure, or testing code, automation saves time and reduces errors.</p>\n<h2>Why Automate?</h2>\n<p>There are several compelling reasons to embrace automation:</p>\n<li><strong>Time Savings</strong>: Automation frees up your time for more creative and strategic work</li>\n<li><strong>Consistency</strong>: Automated processes run the same way every time, reducing human error</li>\n<li><strong>Scalability</strong>: Once automated, processes can easily handle larger workloads</li>\n<li><strong>Cost Efficiency</strong>: Reduced manual work means lower operational costs</li>\n<h2>Where to Start?</h2>\n<p>Begin with identifying repetitive tasks in your workflow. Ask yourself:\n- What tasks do I do repeatedly?\n- How much time do these tasks take?\n- What would be the impact of automating them?</p>\n<p>Once you identify these tasks, you can start exploring tools and frameworks that fit your needs.</p>\n<h2>Tools and Resources</h2>\n<p>Some popular automation tools include:</p>\n<li><strong>Bash/PowerShell</strong>: For system automation</li>\n<li><strong>Python</strong>: For general-purpose scripting</li>\n<li><strong>CI/CD Platforms</strong>: GitHub Actions, GitLab CI, Jenkins</li>\n<li><strong>Infrastructure as Code</strong>: Terraform, Ansible</li>\n<p>Stay tuned for more in-depth tutorials on these tools!</p>",
+      "filename": "2026-04-26-getting-started-automation.md"
+    },
+    {
+      "slug": "github-actions-mastery",
+      "title": "Mastering GitHub Actions Workflows",
+      "date": "2026-04-20",
+      "author": "Your Name",
+      "excerpt": "Mastering GitHub Actions Workflows\r \r GitHub Actions is a powerful CI/CD platform built directly into GitHub. Let's explore how to create and manage w...",
+      "content": "<h1>Mastering GitHub Actions Workflows</h1>\n<p>GitHub Actions is a powerful CI/CD platform built directly into GitHub. Let's explore how to create and manage workflows that automate your development pipeline.</p>\n<h2>What are GitHub Actions?</h2>\n<p>GitHub Actions enable you to automate any workflow right in your repository. You can:</p>\n<li>Run tests on every push</li>\n<li>Deploy applications automatically</li>\n<li>Publish packages</li>\n<li>Create issues and pull requests</li>\n<li>Send notifications</li>\n<h2>Anatomy of a Workflow</h2>\n<p>A GitHub Actions workflow is defined in a YAML file located in the <code>.github/workflows/</code> directory. Here's the basic structure:</p>\n<p><code></code>`yaml\nname: CI Pipeline\non: [push, pull_request]</p>\n<p>jobs:\nbuild:\nruns-on: ubuntu-latest\nsteps:\n- uses: actions/checkout@v3\n- name: Run tests\nrun: npm test\n<code></code>`</p>\n<h2>Key Concepts</h2>\n<li><strong>Workflows</strong>: Automated processes triggered by events</li>\n<li><strong>Jobs</strong>: A set of steps that execute on the same runner</li>\n<li><strong>Steps</strong>: Individual tasks that run commands or actions</li>\n<li><strong>Actions</strong>: Reusable units of code</li>\n<h2>Best Practices</h2>\n<p>1. Keep workflows simple and focused\n2. Use caching to speed up builds\n3. Leverage matrix builds for testing multiple configurations\n4. Monitor and log workflow execution\n5. Use environment secrets for sensitive data</p>\n<p>GitHub Actions can significantly improve your development workflow and code quality.</p>",
+      "filename": "2026-04-18-github-actions-mastery.md"
+    }
+  ],
+  "quickies": [
+    {
+      "slug": "bash-directory-navigation",
+      "title": "Quick Bash Tip: Directory Navigation",
+      "date": "2026-04-25",
+      "author": "Your Name",
+      "excerpt": "Pro Tip: Use cd - to quickly toggle between your current directory and the previous one. This is incredibly useful when working across multiple direct...",
+      "content": "<p><strong>Pro Tip:</strong> Use <code>cd -</code> to quickly toggle between your current directory and the previous one. This is incredibly useful when working across multiple directories.</p>\n<p>Example:\n<code></code>`\n$ cd /var/log\n$ cd /home/user/projects\n$ cd -  # Takes you back to /var/log\n<code></code>`</p>\n<p>Also, <code>~</code> always refers to your home directory, and <code>..</code> goes up one directory level. Chain them together: <code>cd ../../..</code> to go up three levels!</p>",
+      "filename": "2026-04-25-bash-directory-navigation.md"
+    },
+    {
+      "slug": "python-venv",
+      "title": "Python Virtual Environments",
+      "date": "2026-04-22",
+      "author": "Your Name",
+      "excerpt": "Always use virtual environments They isolate project dependencies and prevent conflicts.\r \r Create one:\r \r python -m venv venv\r source venv/bin/activa...",
+      "content": "<p><strong>Always use virtual environments!</strong> They isolate project dependencies and prevent conflicts.</p>\n<p>Create one:\n<code></code>`\npython -m venv venv\nsource venv/bin/activate  # On Windows: venv\\Scripts\\activate\npip install -r requirements.txt\n<code></code>`</p>\n<p>This keeps your system Python clean and your projects reproducible. Pro move: add <code>venv/</code> to <code>.gitignore</code>.</p>",
+      "filename": "2026-04-22-python-venv.md"
+    },
+    {
+      "slug": "git-commit-messages",
+      "title": "Git Commit Message Best Practices",
+      "date": "2026-04-19",
+      "author": "Your Name",
+      "excerpt": "Write clear commit messages Use this format:\r \r \r Type Brief summary 50 chars max\r \r Detailed explanation if needed.\r - List specific changes\r - Be de...",
+      "content": "<p>Write clear commit messages! Use this format:</p>\n<p><code></code>`\n[Type] Brief summary (50 chars max)</p>\n<p>Detailed explanation if needed.\n- List specific changes\n- Be descriptive\n<code></code>`</p>\n<p><strong>Types:</strong>\n- <code>feat:</code> New feature\n- <code>fix:</code> Bug fix\n- <code>docs:</code> Documentation\n- <code>refactor:</code> Code improvement\n- <code>test:</code> Test additions</p>\n<p>Good commits make code reviews and future maintenance so much easier!</p>",
+      "filename": "2026-04-19-git-commit-messages.md"
+    }
+  ],
+  "buildDate": "2026-04-26T05:37:04.016Z"
+}
